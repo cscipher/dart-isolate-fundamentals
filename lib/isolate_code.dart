@@ -22,8 +22,8 @@ class IsolateFundamental {
   }
 
   static void fibonacci(FibModel fm) async {
-    final int ans = await productTillN(fm.n);
-    // fibonacciRecursive(fm.n);
+    // final int ans = await productTillN(fm.n);
+    final int ans = fibonacciRecursive(fm.n);
     print(ans);
     fm.sendport?.send(ans);
   }

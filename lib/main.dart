@@ -61,6 +61,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             ElevatedButton(
                 onPressed: () async {
+                  a1 = 0;
+                  setState(() {});
                   a1 = await _isolate.initFib(10);
                   setState(() {});
                 },
@@ -68,6 +70,8 @@ class _MyHomePageState extends State<MyHomePage> {
             Visibility(visible: a1 != 0, child: Text('result -> $a1')),
             ElevatedButton(
                 onPressed: () async {
+                  a2 = 0;
+                  setState(() {});
                   a2 = await _isolate.initFib(20);
                   setState(() {});
                 },
@@ -75,6 +79,8 @@ class _MyHomePageState extends State<MyHomePage> {
             Visibility(visible: a2 != 0, child: Text('result -> $a2')),
             ElevatedButton(
                 onPressed: () async {
+                  a3 = 0;
+                  setState(() {});
                   a3 = await _isolate.initFib(30);
                   setState(() {});
                 },
@@ -82,6 +88,8 @@ class _MyHomePageState extends State<MyHomePage> {
             Visibility(visible: a3 != 0, child: Text('result -> $a3')),
             ElevatedButton(
                 onPressed: () async {
+                  a4 = 0;
+                  setState(() {});
                   a4 = await _isolate.initFib(40);
                   setState(() {});
                 },
